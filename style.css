@@ -1,0 +1,106 @@
+*{
+    z-index: 1;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wrap{
+    margin: 30px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    border: 2px solid lightcoral;
+    background-color: rgb(255, 230, 255);
+    border-radius: 30px;
+    padding: 10px 15px 20px; 
+    min-width: 280px;
+    font-size: 18px;
+    position: relative;
+}
+.wrap-active{
+    transform: scale(107%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.55);
+}
+.button-remove{
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    border: none;
+    background-color: #57018a;
+    color: aliceblue;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: none;
+}
+.username{
+    font-style: italic;
+    margin: 0px;
+}
+.email, .phone{
+    color: darkviolet;
+    font-weight: 500;
+}
+.email:hover, .phone:hover{
+    text-decoration: underline;
+}
+.wrap .active{
+    background-color: red;
+}
+.user-website{
+    border: none;
+    background-color:#57018a ;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.user-id{
+    position: absolute;
+    font-size: 70px;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #e0cedd
+}
+
+.form{
+    max-width: 600px;
+    border: 2px solid rgb(164, 137, 218);
+    border-radius: 10px;
+    background: #dfd1e8;
+    color: #582258;
+    font-size: 17px;
+    padding: 20px;
+    margin: 20px;
+    align-self: center;
+  }
+  .label{
+    display: block;
+    margin: 10px 0 10px 0;
+  }
+  .form_input{
+    padding: 5px 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #940095;
+  }
+  .submit{
+    color: #621e1e;
+    font-size: 17px;
+    background-color: #dfaaed;
+    border: 2px solid #7d27b7;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 10px 0 ;
+    display: block;
+  }
+  .red-field{
+    background: rgb(213, 104, 104);
+  }
